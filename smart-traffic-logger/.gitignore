@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Flask / SQLite
+instance/
+*.db
+*.sqlite3
+
+# Migrations (keep the folder but not generated files if using fresh DB)
+# Comment this out if you want to commit migrations
+# migrations/versions/
+
+# Secrets
+.env
+
+# Node / Vite
+node_modules/
+dist/
+.vite/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing
+.pytest_cache/
+coverage/
+.coverage
+htmlcov/

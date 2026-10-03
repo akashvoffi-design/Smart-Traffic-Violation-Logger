@@ -1,0 +1,95 @@
+/* ============================================================
+   Design Tokens — Obsidian & Champagne Luxury Dark Theme
+   ============================================================ */
+
+:root {
+  /* ── Backgrounds ── */
+  --bg-base: #07080B;
+  --bg-gradient: radial-gradient(1200px 600px at 15% -10%, rgba(212,175,55,0.14), transparent 60%),
+                 radial-gradient(900px 500px at 100% 0%, rgba(120,140,255,0.10), transparent 55%),
+                 #07080B;
+
+  /* ── Surfaces ── */
+  --surface-glass: rgba(255,255,255,0.06);
+  --surface-glass-strong: rgba(255,255,255,0.10);
+  --surface-hover: rgba(255,255,255,0.08);
+
+  /* ── Borders ── */
+  --border-hairline: rgba(255,255,255,0.12);
+  --border-gold: rgba(212,175,55,0.35);
+  --border-focus: rgba(212,175,55,0.55);
+
+  /* ── Text ── */
+  --text-primary: #F5F1E8;
+  --text-secondary: rgba(245,241,232,0.62);
+  --text-muted: rgba(245,241,232,0.38);
+
+  /* ── Accent Gold ── */
+  --accent-gold: #D4AF37;
+  --accent-gold-soft: #E9D8A6;
+  --gold-gradient: linear-gradient(135deg, #F3E2A9 0%, #D4AF37 45%, #9C7A1E 100%);
+  --gold-gradient-hover: linear-gradient(135deg, #F8EBBB 0%, #E4BF47 45%, #B08C2E 100%);
+
+  /* ── Status ── */
+  --status-paid: #34D399;
+  --status-paid-bg: rgba(52,211,153,0.12);
+  --status-unpaid: #F26D6D;
+  --status-unpaid-bg: rgba(242,109,109,0.12);
+  --status-pending-glow: rgba(242,109,109,0.25);
+
+  /* ── Radii ── */
+  --radius-card: 28px;
+  --radius-button: 999px;
+  --radius-input: 18px;
+  --radius-sheet: 32px;
+  --radius-badge: 8px;
+
+  /* ── Shadows ── */
+  --shadow-glass: 0 1px 0 rgba(255,255,255,0.08) inset, 0 20px 50px rgba(0,0,0,0.45);
+  --shadow-card: 0 4px 24px rgba(0,0,0,0.5), 0 1px 0 rgba(255,255,255,0.08) inset;
+  --shadow-button: 0 4px 20px rgba(212,175,55,0.35), 0 1px 0 rgba(255,255,255,0.2) inset;
+  --shadow-gold: 0 0 30px rgba(212,175,55,0.25);
+
+  /* ── Typography ── */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-serif: 'Playfair Display', 'Cormorant Garamond', serif;
+  --font-mono: 'JetBrains Mono', 'SF Mono', ui-monospace, monospace;
+
+  --text-hero: clamp(28px, 5vw, 40px);
+  --text-title: clamp(22px, 3vw, 28px);
+  --text-headline: 20px;
+  --text-body: 16px;
+  --text-small: 14px;
+  --text-caption: 13px;
+
+  /* ── Spacing ── */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+
+  /* ── Transitions ── */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 350ms ease;
+
+  /* ── Layout ── */
+  --sidebar-width: 240px;
+  --content-max: 1200px;
+  --bottom-bar-height: 72px;
+  --tap-target: 44px;
+}
+
+/* ── Reduced motion ── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
